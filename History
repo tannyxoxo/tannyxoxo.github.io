@@ -11,5 +11,10 @@
 </ul>
 <style>
 
+  h1{
+    text-align: center;
+    color: #6495ED; 
+    font-family: Century Gothic;
+  }
 </body>
 </html>
