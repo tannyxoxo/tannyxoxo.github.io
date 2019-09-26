@@ -45,4 +45,5 @@ function openTab(tabName) {
   }
   document.getElementById(tabName).style.display = "block";
 }
- body{
+ body
+{body {background-color: MintWhite;}
