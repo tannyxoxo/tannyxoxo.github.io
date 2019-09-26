@@ -13,10 +13,33 @@
   <a href="#kidscreen" class="w3-button w3-bar-item">KIDSCREEN</a>
   <a href="#contact" class="w3-button w3-bar-item">CONTACT</a>
 </nav>
-  <section class="w3-container w3-center" style="max-width:600px">
-  <h2 class="w3-wide">Our Mission</h2>
-  <p class="w3-opacity"><i>INSERT MISSION STATEMENT</i></p>
-</section>
+  
+ <!-- The grid: three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:AliceBlue;">Box 1</div>
+  <div class="column" onclick="openTab('b2');" style="background:blue;">Box 2</div>
+  <div class="column" onclick="openTab('b3');" style="background:red;">Box 3</div>
+</div>
+
+<!-- The expanding grid (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background:green">
+  <!-- If you want the ability to close the container, add a close button -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>Box 1</h2>
+  <p>Lorem ipsum..</p>
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:blue">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>Box 2</h2>
+  <p>Lorem ipsum..</p>
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:red">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>Box 3</h2>
+  <p>Lorem ipsum..</p>
+</div>
 </body>
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
