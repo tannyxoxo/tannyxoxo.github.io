@@ -26,20 +26,50 @@
   <!-- If you want the ability to close the container, add a close button -->
   <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
   <h2>Box 1</h2>
-  <p>Lorem ipsum..</p>
+  <p>About</p>
 </div>
 
 <div id="b2" class="containerTab" style="display:none;background:BlanchedAlmond">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
   <h2>Box 2</h2>
-  <p>Lorem ipsum..</p>
+  <p>Contact</p>
 </div>
 
 <div id="b3" class="containerTab" style="display:none;background:Lavender">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
   <h2>Box 3</h2>
-  <p>Lorem ipsum..</p>
+  <p>Our Mission</p>
 </div>
+  /* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: black;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  float: right;
+  color: Black;
+  font-size: 35px;
+  cursor: pointer;
+}
 </body>
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
